@@ -1,186 +1,304 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body
-{
-	background-color: #FFFFFF;
-	font-family: comic sans ms, Trebuchet ms;
-	margin: 0;
-	width: 100%;
+body {
+  background-color: #ffffff;
+  margin: 0;
+  width: 100%;
+  font-family: "Montserrat", Trebuchet MS, Comic sans MS;
+  src: url(Montserrat-Regular.ttf);
 }
-ul
-{
-	list-style-type: none;
+.topheader {
+  font-family: Trebuchet ms, comic sans ms;
+  background-color: #1d7bb3;
+  color: gainsboro;
+  height: 3vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
-header
-{
-	display: flex;
-	position: relative;
-	z-index: 4;
-	width: 100%;
-	margin-top: 0px;
-	background:linear-gradient(#86bedf, #FFFFFF);
+.fbook {
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.menu
-{
-	display: inline-flex;
-	position: relative;
-	width: 100%;
-	text-decoration: none;
-	justify-content: space-evenly;
-	z-index: 5;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 50px;
-	padding-bottom: 20px;
-	padding-left: 22px;
-	font-size: 1.4em;
-	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
-	list-style-type: none;
-	overflow: hidden;
+ul {
+  list-style-type: none;
 }
-.menu a{
-	color: #000000;
-	transition: all 0.5s linear;
-	background-size: 0 100%;
-	padding-bottom: 7px;
+header {
+  display: flex;
+  /*position: fixed;*/
+  z-index: 4;
+  width: 100%;
+  background-color: #5ca5cf;
 }
-.logo{
-	float: left;
+.techno h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #1d7bb3;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
-.menu a:hover{
-	color: #1D7BB3;
-	background: linear-gradient(to top, rgb(29, 123, 179) 0%, rgba(29, 123, 179) 4px, transparent 5px) no-repeat;
-	background-size: 100% 100%;
+.technologos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
 }
-.slider
-{
-	overflow: hidden;
-	margin: auto;
-	margin-top: 80px;
-	margin-bottom: 100px;
-	padding-bottom: 100px;
-	width: 400px;
+.htmllogo {
+  margin: 45px 45px;
+}
+.csslogo {
+  margin: 45px 45px;
+}
+.sasslogo {
+  margin: 45px 45px;
+}
+.phplogo {
+  margin: 45px 45px;
+}
+.wplogo {
+  margin: 45px 45px;
+}
+.jslogo {
+  margin: 45px 45px;
+}
+.woologo {
+  margin: 45px 45px;
+}
+.sidebar {
+  width: 21%;
+  height: 500px;
+  float: left;
+  background-color: #8ca0ac5b;
+  color: #1d7bb3;
+  border-radius: 0px 40px 40px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vw;
+}
+.sidebar h1 {
+  color: #000000;
+  text-transform: capitalize;
+  font-size: 1.8em;
+}
+.sidebar h3 {
+  font-size: 22px;
+}
+.sidebar h2:hover {
+  opacity: 0.7;
+}
+.fblink {
+  margin-top: 8px;
+}
+.fblink:hover {
+  box-shadow: 3px 3px rgb(255, 255, 255);
+  width: 32px;
+  height: 32px;
+}
+a:visited {
+  color: #1d7bb3;
+}
+section {
+  width: 100%;
+}
+.menu {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  justify-content: space-evenly;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    height: 200px;
+    align-content: center;
+  }
+  .body {
+    width: 100%;
+  }
+}
+.menu a {
+  color: #000000;
+  transition: all 0.5s linear;
+  background-size: 0 100%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.logo {
+  float: left;
+}
+.menu a:hover {
+  color: #00ff15;
+  background: linear-gradient(
+      to top,
+      rgb(29, 123, 179) 0%,
+      rgba(29, 123, 179) 4px,
+      transparent 5px
+    )
+    no-repeat;
+  background-size: 100% 100%;
+}
+.slider {
+  overflow: hidden;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  width: 400px;
 }
 @keyframes gliss {
-	0%{
-		transform: translateX(0px);
-	}
-	10%{
-		transform: translateX(0px);
-	}
-	33%{
-		transform: translateX(-400px);
-	}
-	43%{
-		transform: translateX(-400px);
-	}
-	66%{
-		transform: translateX(-800px);
-	}
-	76%{
-		transform: translateX(-800px);
-	}
-	100%{
-		transform: translateX(0);
-	}
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(-400px);
+  }
+  43% {
+    transform: translateX(-400px);
+  }
+  66% {
+    transform: translateX(-800px);
+  }
+  76% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
-.slides
-{
-	width: calc(500px *3);
-	animation: gliss 9s infinite;
-	padding-right: 45px;
-	padding-left: 45px;
-	border-radius: 30px;
+.slides {
+  width: calc(500px * 3);
+  animation: gliss 9s infinite;
+  padding-right: 45px;
+  padding-left: 45px;
+  border-radius: 30px;
 }
-.slide
-{
-	float: left;
-	border-radius: 30px;
+.slide {
+  float: left;
+  border-radius: 30px;
 }
-.reseaux::after{
-	content: "bla bla";
-	background: linear-gradient(#1D7BB3, #FFFFFF);
+.reseaux::after {
+  content: "bla bla";
+  background: linear-gradient(#1d7bb3, #ffffff);
 }
-nav a
-{
-	text-decoration: none;
-	color: black;
+nav a {
+  text-decoration: none;
+  color: black;
 }
 @font-face {
-	font-family: "Montserrat";
-	src: url(Montserrat-Regular.ttf);
+  font-family: "Montserrat";
+  src: url(Montserrat-Regular.ttf);
 }
 @font-face {
-	font-family: "Protos";
-	src: url(Protos.otf);
+  font-family: "Protos";
+  src: url(Protos.otf);
 }
-hr
-{
-	display: block;
-	clear: both;
+hr {
+  display: block;
+  clear: both;
   height: 3px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
-.titre
-{
-	position: relative;
-	text-align: center;
-	width: 100%;
-	margin-top: 8vw;
-	margin-bottom: 50px;
-	font-family: 'Protos', comic sans ms, Trebuchet ms;
-	font-size: 2.7em;
-	color: #1D7BB3;
-	letter-spacing: 16px;
+.titre {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 8vw;
+  margin-bottom: 50px;
+  font-family: "Protos", comic sans ms, Trebuchet ms;
+  font-size: 2.7em;
+  color: #1d7bb3;
+  letter-spacing: 16px;
 }
-.soustitre
-{
-	position: relative;
-	text-align: center;
-	width: 100%;
-	margin-top: 0px;
-	margin-bottom: 3vw;
-	font-size: 1.7em;
-	font-family: "Montserrat";
+.entete {
+  background: linear-gradient(#86bedf, white);
+  height: 28vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10vw;
 }
-.reseaux
-{
-	width: 100%;
-	height: 500px;
+.soustitre {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 3vw;
+  font-size: 1.7em;
+  font-family: "Montserrat";
+  font-weight: 900;
 }
-footer
-{
-	background: linear-gradient(#FFFFFF,#1D7BB3);
-	text-align: center;
-	margin-top: 300px;
-	padding-bottom: 40px;
-	padding-top: 40px;
-
+.reseaux {
+  width: 100%;
+  height: 500px;
 }
-section article p
-{
-	width: 60%;
-	text-align: justify; 
+footer {
+  background: linear-gradient(#ffffff, #1d7bb3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 14vw;
+  margin-top: 10vw;
+  order: 6;
+  width: 100%;
+  /*padding-bottom: 40px;
+	padding-top: 40px;*/
 }
-.facebook
-{
-	border-radius: 50%;
+section article p {
+  width: 60%;
+  text-align: justify;
+  line-height: 32px;
 }
-.facebook:hover{
-	animation-name: babal;
+.facebook {
+  border-radius: 40%;
+  transition: all 0.2s linear;
+}
+.facebook:hover {
+  transform: scale(1.3) rotate(5deg);
+  /*animation-name: babal;
 	animation-duration: 1s;
 	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards;*/
 }
-@keyframes babal{
+.facebook img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/*@keyframes babal{
 	0%{
 		border-radius: 35%;
 		height: 80px;
@@ -196,119 +314,159 @@ section article p
 		height: 90px;
 		width: 90px;
 	}
+}*/
+.smartphone {
+  float: right;
+  position: relative;
 }
-.smartphone
-{
-	float: right;
-	position: relative;
+article {
+  margin: 50px;
+  padding: 60px;
 }
-article
-{
-	margin: 50px;
-	padding: 60px;
+article h1 {
+  color: #1d7bb3;
+  text-transform: uppercase;
 }
 article ::before {
-	content: "";
+  content: "";
 }
 article ::after {
-	content: "";
+  content: "";
 }
-.appweb
-{
-	float: left;
-	margin-top: 150px;
+.appweb {
+  float: left;
+  margin-top: 150px;
+  margin-bottom: 190px;
 }
-.appliweb
-{
-	justify-content: right;
-	margin-top: 50px;
-	width: auto;
+.appliweb {
+  justify-content: right;
+  margin-top: 50px;
+  width: 100%;
 }
-.appliwebtitle
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
+.appliwebtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.mobileapp
-{
-	float: right;
+.mobileapp {
+  float: right;
 }
-section aside h1
-{
-	display: flex;
-	text-align: center;
-	margin: auto;
-	height: auto;
-	align-items: center;
+section aside h1 {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  height: auto;
+  align-items: center;
 }
-section aside
-{
-	display: flex;
-	align-items: center;
-	text-align: center;
-	margin: auto;
+section aside {
+  display: flex;
+  order: 4;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
-.faceb
-{
-	margin-top: 150px;
+.faceb {
+  margin-top: 150px;
 }
-.insta
-{
-	margin-top: 150px;
+.insta {
+  margin-top: 150px;
 }
-.twitter
-{
-	margin-top: 150px;
+.twitter {
+  margin-top: 150px;
 }
 .boutondev {
-	display: grid;
+  display: grid;
 }
-.devis
-{
-	text-transform: uppercase;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	font-size: 26px;
-	font-family: comic sans ms;
-	border-radius: 18px;
-	padding: 25px;
-	background-color: #1D7BB3;
-	color: #00ff15;
-	letter-spacing: 8px;
-	transition: all 0.2s linear;
+.presta-title {
+  text-transform: uppercase;
+  font-family: "Protos", comic sans ms, Trebuchet MS;
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.8em;
+  color: #1d7bb3;
 }
-.devis:hover{
-	background: #000000;
-		color: #18C0EA;
-		font-size: 30px;
-	/*animation-name: coco;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;*/
+.presta {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 4%;
+  text-transform: capitalize;
+  flex-wrap: wrap;
 }
-/*@keyframes coco{
-	0%{
-		background: #000000;
-		color: #FFFFF;
-	}
-	25%{
-		background: #000000;
-		color: #FFFFF;
-		font-size: 30px;
-	}
-	75%{
-		background: #000000;
-		color: #18C0EA;
-		font-size: 30px;
-	}
-	100%{
-		background-color: #1D7BB3;
-		color: #00ff15;
-	}
-}*/
+.presta h2 {
+  margin-bottom: 30px;
+}
+.prestappli {
+  margin-top: 4vw;
+  width: 30%;
+}
+.prestaweb {
+  margin-top: 4vw;
+  width: 30%;
+}
+.prestasite {
+  margin-top: 4vw;
+  width: 30%;
+}
+.prestacomm {
+  margin-top: 4vw;
+  width: 30%;
+}
+.prestaref {
+  margin-top: 4vw;
+  width: 30%;
+}
+.savoirplus {
+  padding: 20px 20px 20px 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-size: 26px;
+  margin: 20px 20px;
+  background-color: #1d7bb3;
+  color: #00ff15;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  box-shadow: 6px 4px 6px 4px #75b3db;
+  margin: 80px 80px;
+  transition: all 0.2s linear;
+}
+.savoirplus:hover {
+  background: #000000;
+  color: #18c0ea;
+  font-size: 30px;
+}
+.liendevis {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.argutitre {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  color: #1d7bb3;
+  margin-bottom: 130px;
+}
+.argu {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.arguments {
+  border: 8px solid #007491;
+  border-radius: 28px 28px 28px 28px;
+  margin: 20px 20px;
+  padding: 50px 50px;
+}
