@@ -447,12 +447,17 @@ section aside {
 .savoirplus:hover {
   background: #000000;
   color: #18c0ea;
+  box-shadow: 6px 4px 6px 4px #00ff15;
   font-size: 30px;
 }
 .liendevis {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+.liendevis a {
+  text-decoration: none;
+  color: #00ff15;
 }
 .argutitre {
   display: flex;
