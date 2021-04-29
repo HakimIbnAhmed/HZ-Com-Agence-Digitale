@@ -99,7 +99,7 @@ section {
   font-family: "Montserrat";
   src: url(Montserrat-Regular.ttf);
 }
-.pagecontact {
+.titrepagepresta {
   text-align: center;
   text-transform: uppercase;
   color: #1d7bb3;
@@ -109,142 +109,57 @@ section {
   font-size: 1.8em;
   background: linear-gradient(#86bedf, white);
 }
-.h2contacttitre {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 30px 30px;
-  font-family: "Montserrat", Trebuchet MS, Comic sans MS;
-  src: url(Montserrat-Regular.ttf);
-}
-.formulaire {
-  padding: 60px 60px;
-}
-.formulaire p {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  font-size: 1em;
-}
-.formulaire p label {
-  margin: 10px 10px;
-}
-.formulaire p input {
-  font-size: 0.8em;
-  padding: 5px 5px;
-}
-.formulaire textarea {
-  font-size: 0.8em;
-  padding: 5px 5px;
-}
-form {
-  font-family: "Montserrat", Trebuchet MS, Comic sans MS;
-  src: url(Montserrat-Regular.ttf);
-  display: grid;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #a7e3ff, #5ca5cf);
-  width: 100%;
-  padding: 25px 30px;
-  border-radius: 15px 15px;
-  font-size: 1.2em;
-}
-.btnenvoyer {
-  color: #00ff15;
-  background: linear-gradient(#000, #1d7bb3);
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1em;
-  border-radius: 7px 7px;
-  padding: 8px 8px;
-  text-transform: uppercase;
-  width: 100%;
-}
-.describeproject {
-  width: 100%;
-}
-legend {
-  margin: 20px 0 12px 0;
-}
-fieldset {
-  border: 0;
-}
-.prestbudget {
+section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
 }
-.prestbudget input {
-  margin: 10px 10px;
-}
-.contactmail {
+.prestaappmobile,
+.prestaappweb,
+.prestawebsite,
+.prestacommunity,
+.prestaseo,
+.prestaeco {
+  text-align: center;
   justify-content: center;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 50px;
+  background: #86bedf;
+  border-radius: 5px 5px;
+  padding: 15px 15px;
+  margin: 20px 28px;
+  line-height: 1.8vw;
+  font-size: 1.1em;
 }
-.contactmailform {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  padding: 25px 30px;
-  border-radius: 15px 15px;
-  font-size: 1.2em;
-  margin: 30px 30px;
+.prestaappweb a,
+.prestaappmobile a,
+.prestawebsite a,
+.prestacommunity a,
+.prestaseo a,
+.prestaeco a {
+  color: #00ff15;
 }
-.contactmailform input {
-  font-size: 1em;
-  padding: 10px 10px;
+.prestaappmobile p,
+.prestaeco p,
+.prestacommunity p {
+  padding: 5px 5px;
+  margin: 18px 8px;
 }
-.contactmailform textarea {
-  font-size: 0.8em;
-  width: 900px;
-  height: 300px;
-  padding: 10px 10px;
+.prestaappweb p,
+.prestawebsite p,
+.prestaseo p {
+  padding: 5px 5px;
+  margin: 18px 8px;
 }
-.nomformcontact1 {
-  display: flex;
-  justify-content: left;
-  width: 300px;
-  margin-left: 0;
+.btndevis {
+  position: relative;
+  text-decoration: none;
+  background: #1d7bb3;
+  padding: 6px 6px;
+  border-radius: 3px 3px;
+  transition: all 0.2s linear;
 }
-.nomformcontact {
-  display: flex;
-  justify-content: left;
-  width: 400px;
-  margin-left: 0;
-}
-.emailformcontact1 {
-  display: flex;
-  justify-content: right;
-  align-items: flex-end;
-  text-align: right;
-  width: 300px;
-  margin-right: 0;
-}
-.emailformcontact {
-  display: flex;
-  justify-content: right;
-  align-items: flex-end;
-  text-align: right;
-  width: 400px;
-  margin-right: 0;
-}
-form input {
-  border-radius: 7px 7px;
-}
-form textarea {
-  border-radius: 7px 7px;
-}
-.fondmedia {
-  display: flex;
-  text-align: center;
-  margin: auto;
+.btndevis:hover {
+  background: #000;
+  font-size: 20px;
 }
 footer {
   background: linear-gradient(#ffffff, #1d7bb3);
