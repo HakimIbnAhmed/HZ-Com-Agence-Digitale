@@ -161,6 +161,11 @@ section {
   background: #000;
   font-size: 20px;
 }
+.imgpiedpresta {
+  display: flex;
+  justify-content: center;
+  margin: 70px 100px;
+}
 footer {
   background: linear-gradient(#ffffff, #1d7bb3);
   display: flex;
