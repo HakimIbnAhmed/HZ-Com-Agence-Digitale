@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 body {
   background-color: #ffffff;
@@ -16,6 +17,21 @@ body {
   color: gainsboro;
   height: 3vw;
   display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  z-index: 7;
+}
+.topheader2 {
+  visibility: hidden;
+  font-family: Trebuchet ms, comic sans ms;
+  background-color: #1d7bb3;
+  color: gainsboro;
+  display: flex;
+  width: 100%;
+  height: 3vw;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
@@ -29,7 +45,7 @@ ul {
 }
 header {
   display: flex;
-  /*position: fixed;*/
+  position: fixed;
   z-index: 4;
   width: 100%;
   background-color: #5ca5cf;
@@ -58,16 +74,6 @@ section {
   list-style-type: none;
   overflow: hidden;
   flex-wrap: wrap;
-}
-@media (max-width: 600px) {
-  .menu {
-    flex-direction: column;
-    height: 200px;
-    align-content: center;
-  }
-  .body {
-    width: 100%;
-  }
 }
 .menu a {
   color: #000000;
@@ -218,4 +224,22 @@ footer {
   transition: all 0.3s;
   box-sizing: border-box;
   max-width: 100%;
+}
+  .textehistoire,
+  .texteobjectif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin-left: 230px;
+  }
+  .logohist {
+    display: none;
+  }
+  .logo {
+    float: none;
+    width: 95px;
+    height: 95px;
+  }
 }

@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+@media screen and (max-width: 900px) {
+  * {
+    width: auto;
+  }
+}
 body {
   background-color: #ffffff;
   margin: 0;
@@ -10,15 +15,48 @@ body {
   font-family: "Montserrat", Trebuchet MS, Comic sans MS;
   src: url(Montserrat-Regular.ttf);
 }
+@media screen and (max-width: 1200px) {
+  body {
+    width: auto;
+  }
+  .logo {
+    float: none;
+    width: 95px;
+    height: 95px;
+  }
+}
 .topheader {
   font-family: Trebuchet ms, comic sans ms;
   background-color: #1d7bb3;
   color: gainsboro;
-  height: 3vw;
   display: flex;
+  position: fixed;
+  width: 100%;
+  height: 3vw;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  z-index: 7;
+}
+.topheader2 {
+  visibility: hidden;
+  font-family: Trebuchet ms, comic sans ms;
+  background-color: #1d7bb3;
+  color: gainsboro;
+  display: flex;
+  width: 100%;
+  height: 3vw;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 660px) {
+  .topheader {
+    display: none;
+  }
+  .topheader2 {
+    display: none;
+  }
 }
 .fbook {
   margin-left: 10px;
@@ -29,7 +67,6 @@ ul {
 }
 header {
   display: flex;
-  /*position: fixed;*/
   z-index: 4;
   width: 100%;
   background-color: #5ca5cf;
@@ -50,6 +87,11 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   width: 75%;
+}
+@media screen and (max-width: 870px) {
+  .technologos {
+    width: auto;
+  }
 }
 .htmllogo {
   margin: 45px 45px;
@@ -85,6 +127,16 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4vw;
+}
+@media screen and (max-width: 1125px) {
+  .sidebar {
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 870px) {
+  .sidebar {
+    display: none;
+  }
 }
 .sidebar h1 {
   color: #000000;
@@ -279,6 +331,12 @@ section article p {
   text-align: justify;
   line-height: 32px;
 }
+@media screen and (max-width: 900px) {
+  section article p {
+    width: auto;
+    justify-content: center;
+  }
+}
 .facebook,
 .instagramlogo {
   border-radius: 40%;
@@ -293,6 +351,15 @@ section article p {
   box-sizing: border-box;
   max-width: 100%;
 }
+@media screen and (max-width: 895px) {
+  footer {
+    flex-direction: column;
+  }
+  .facebook,
+  .instagramlogo {
+    display: none;
+  }
+}
 .smartphone {
   float: right;
   position: relative;
@@ -301,6 +368,17 @@ section article p {
 article {
   margin: 50px;
   padding: 60px;
+}
+@media screen and (max-width: 900px) {
+  article img {
+    display: none;
+  }
+  article {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
 }
 article h1 {
   color: #1d7bb3;
@@ -380,6 +458,17 @@ section aside {
   margin-top: 4%;
   text-transform: capitalize;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1115px) {
+  .presta img {
+    display: none;
+  }
+  .presta h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #1d7bb3;
+    text-decoration-style: double;
+  }
 }
 .presta h2 {
   margin-bottom: 30px;
@@ -464,6 +553,18 @@ section aside {
   font-family: "Protos";
   margin: 20px 20px;
 }
+@media screen and (max-width: 1120px) {
+  .argu p {
+    display: none;
+  }
+  .argu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .argu h2 {
+    color: #000;
+  }
+}
 .arguments {
   border: 4px solid #86bedf;
   border-radius: 28px 28px 28px 28px;
@@ -497,4 +598,9 @@ section aside {
   display: flex;
   text-align: center;
   margin: auto;
+}
+@media screen and (max-width: 1080px) {
+  .fondpiedpage {
+    display: none;
+  }
 }
