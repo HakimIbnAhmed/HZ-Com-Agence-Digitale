@@ -25,39 +25,7 @@ body {
     height: 95px;
   }
 }
-.topheader {
-  font-family: Trebuchet ms, comic sans ms;
-  background-color: #1d7bb3;
-  color: gainsboro;
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: 3vw;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  z-index: 7;
-}
-.topheader2 {
-  visibility: hidden;
-  font-family: Trebuchet ms, comic sans ms;
-  background-color: #1d7bb3;
-  color: gainsboro;
-  display: flex;
-  width: 100%;
-  height: 3vw;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-@media screen and (max-width: 660px) {
-  .topheader {
-    display: none;
-  }
-  .topheader2 {
-    display: none;
-  }
-}
+
 .fbook {
   margin-left: 10px;
   margin-right: 10px;
@@ -65,12 +33,7 @@ body {
 ul {
   list-style-type: none;
 }
-header {
-  display: flex;
-  z-index: 4;
-  width: 100%;
-  background-color: #5ca5cf;
-}
+
 .techno h1 {
   display: flex;
   justify-content: center;
@@ -163,25 +126,7 @@ a:visited {
 section {
   width: 100%;
 }
-.menu {
-  display: inline-flex;
-  position: relative;
-  width: 100%;
-  text-decoration: none;
-  justify-content: space-evenly;
-  z-index: 5;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 22px;
-  font-size: 1.4em;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  list-style-type: none;
-  overflow: hidden;
-  flex-wrap: wrap;
-}
+
 @media (max-width: 600px) {
   .menu {
     flex-direction: column;
@@ -192,27 +137,11 @@ section {
     width: 100%;
   }
 }
-.menu a {
-  color: #000000;
-  transition: all 0.5s linear;
-  background-size: 0 100%;
-  padding-bottom: 3px;
-  padding-top: 3px;
-}
+
 .logo {
   float: left;
 }
-.menu a:hover {
-  color: #00ff15;
-  background: linear-gradient(
-      to top,
-      rgb(29, 123, 179) 0%,
-      rgba(29, 123, 179) 4px,
-      transparent 5px
-    )
-    no-repeat;
-  background-size: 100% 100%;
-}
+
 .slider {
   overflow: hidden;
   margin: auto;
@@ -259,10 +188,7 @@ section {
   content: "bla bla";
   background: linear-gradient(#1d7bb3, #ffffff);
 }
-nav a {
-  text-decoration: none;
-  color: black;
-}
+
 @font-face {
   font-family: "Montserrat";
   src: url(Montserrat-Regular.ttf);

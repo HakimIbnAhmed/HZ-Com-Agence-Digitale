@@ -1,0 +1,73 @@
+.top-header {
+  font-family: Trebuchet ms, comic sans ms;
+  background-color: #1d7bb3;
+  color: gainsboro;
+  display: flex;
+  width: 100%;
+  height: 3vw;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.top-header-hidden {
+  visibility: hidden;
+}
+.top-header-visible {
+  position: fixed;
+  z-index: 7;
+}
+@media screen and (max-width: 660px) {
+  .top-header {
+    display: none;
+  }
+  .top-header-hidden {
+    display: none;
+  }
+}
+header {
+  display: flex;
+  z-index: 4;
+  width: 100%;
+  background-color: #5ca5cf;
+}
+.menu {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  justify-content: space-evenly;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.menu a {
+  color: #000000;
+  transition: all 0.5s linear;
+  background-size: 0 100%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.menu a:hover {
+  color: #00ff15;
+  background: linear-gradient(
+      to top,
+      rgb(29, 123, 179) 0%,
+      rgba(29, 123, 179) 4px,
+      transparent 5px
+    )
+    no-repeat;
+  background-size: 100% 100%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
