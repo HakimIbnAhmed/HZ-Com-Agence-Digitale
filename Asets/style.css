@@ -14,6 +14,7 @@
 }
 .top-header-visible {
   position: fixed;
+  justify-content: space-around;
   z-index: 7;
 }
 @media screen and (max-width: 660px) {
