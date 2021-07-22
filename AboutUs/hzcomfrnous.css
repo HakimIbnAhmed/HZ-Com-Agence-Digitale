@@ -28,7 +28,7 @@ section {
 
 @font-face {
   font-family: "Protos";
-  src: url(Protos.otf);
+  src: url(../Polices/Protos.otf);
 }
 @font-face {
   font-family: "Montserrat";

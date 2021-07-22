@@ -195,7 +195,7 @@ section {
 }
 @font-face {
   font-family: "Protos";
-  src: url(Protos.otf);
+  src: url(../Polices/Protos.otf);
 }
 hr {
   display: block;
